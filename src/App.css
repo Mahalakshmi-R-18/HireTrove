@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App {
+  text-align: center;
+}
+
+header {
+  background-color: #4a90e2;
+  padding: 1rem;
+  color: white;
+}
+
+nav a {
+  color: white;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.font-custom {
+  font-family: 'Poppins', sans-serif;
 }

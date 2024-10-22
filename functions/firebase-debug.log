@@ -1,0 +1,33 @@
+[debug] [2024-10-20T09:40:21.796Z] ----------------------------------------------------------------------
+[debug] [2024-10-20T09:40:21.804Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mahar\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2024-10-20T09:40:21.805Z] CLI Version:   13.20.0
+[debug] [2024-10-20T09:40:21.805Z] Platform:      win32
+[debug] [2024-10-20T09:40:21.806Z] Node Version:  v20.9.0
+[debug] [2024-10-20T09:40:21.806Z] Time:          Sun Oct 20 2024 15:10:21 GMT+0530 (India Standard Time)
+[debug] [2024-10-20T09:40:21.806Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-20T09:40:21.814Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-10-20T09:40:22.030Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-20T09:40:22.031Z] > authorizing via signed-in user (wheelsontheway3@gmail.com)
+[debug] [2024-10-20T09:40:22.031Z] [iam] checking project hiretrove for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2024-10-20T09:40:22.033Z] > refreshing access token with scopes: []
+[debug] [2024-10-20T09:40:22.034Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-10-20T09:40:22.035Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-20T09:40:22.317Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-10-20T09:40:22.318Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-20T09:40:22.332Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hiretrove:testIamPermissions [none]
+[debug] [2024-10-20T09:40:22.333Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/hiretrove:testIamPermissions x-goog-quota-user=projects/hiretrove
+[debug] [2024-10-20T09:40:22.334Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hiretrove:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-10-20T09:40:22.642Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-10-20T09:40:22.642Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-10-20T09:40:23.842Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/hiretrove:testIamPermissions 200
+[debug] [2024-10-20T09:40:23.843Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hiretrove:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-10-20T09:40:23.844Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/hiretrove/serviceAccounts/hiretrove@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-10-20T09:40:23.844Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/hiretrove/serviceAccounts/hiretrove@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-10-20T09:40:25.596Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/hiretrove/serviceAccounts/hiretrove@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-10-20T09:40:25.596Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/hiretrove/serviceAccounts/hiretrove@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'hiretrove'...
+[info] 
+[info] i  deploying functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
