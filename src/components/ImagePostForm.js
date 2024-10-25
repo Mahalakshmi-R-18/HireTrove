@@ -25,7 +25,7 @@ const ImagePostForm = ({ clubId, clubName, members, onPostSuccess, isPostFormVis
         }
       } catch (error) {
         console.error("Error fetching user data:", error);
-        toast.error('Failed to fetch user data.');
+        //toast.error('Failed to fetch user data.');
       }
     };
 
