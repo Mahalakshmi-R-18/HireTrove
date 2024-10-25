@@ -6,12 +6,12 @@ import { getFunctions } from 'firebase/functions'; // Add this line to import Cl
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCxDZbbEpePSLkMh4mV8UlbZ30jR2clwIM",
-  authDomain: "hiretrove.firebaseapp.com",
-  projectId: "hiretrove",
-  storageBucket: "hiretrove.appspot.com",
-  messagingSenderId: "178563686249",
-  appId: "1:178563686249:web:711d94b5ef0d637370a7f8"
+  apiKey: "Your API_Key",
+  authDomain: "Your authDomain",
+  projectId: "Your projectId",
+  storageBucket: "Your storageBucket",
+  messagingSenderId: "Your messagingSenderId",
+  appId: "Your appId"
 };
 
 // Initialize Firebase
