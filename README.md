@@ -4,5 +4,7 @@ HireTrove is designed with responsiveness in mind, providing a smooth experience
 
 To run, download all the files, replace your firebase credentials -
 
+Terminal 1 :
 cd hiretrove -> cd functions -> node index.js (5000 server)
+Terminal 2 :
 cd hiretrove -> npm start (3000 server)
