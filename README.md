@@ -3,5 +3,6 @@ At the heart of HireTrove is a powerful search and discovery module, allowing us
 HireTrove is designed with responsiveness in mind, providing a smooth experience across both desktop and mobile devices. By promoting continuous learning and professional growth, the platform aims to create a dynamic environment where users can share expertise, learn collaboratively, and advance their skills. With a focus on engagement and community-building, HireTrove is positioned to become a hub for skill-sharing and professional development.
 
 To run, download all the files, replace your firebase credentials -
+
 cd hiretrove -> cd functions -> node index.js (5000 server)
 cd hiretrove -> npm start (3000 server)
